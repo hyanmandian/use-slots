@@ -20,7 +20,7 @@ export function Prompt() {
 }
 ```
 
-In this case, if you put `ModalHeader`, after `ModalBody` the render result should be wrong because it depends on the order.
+In this case, if you put `ModalHeader`, after `ModalBody` the render result could be wrong because it depends on the order.
 
 ## Installation
 
