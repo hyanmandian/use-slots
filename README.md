@@ -7,7 +7,7 @@
 
 When you use [Compound Components Pattern](https://kentcdodds.com/blog/compound-components-with-react-hooks) you need to guarantee that the children you receive are the same as you expect and these children should follow some order, for example:
 
-```typescript
+```jsx
 import { Modal, ModalHeader, ModalBody } from "some-react-modal-lib";
 
 export function Prompt() {
@@ -30,7 +30,7 @@ npm install --save use-slots
 
 ## Usage
 
-```typescript
+```jsx
 // import these functions
 import { beSlot, useSlots } from "use-slots";
 
