@@ -5,7 +5,7 @@
 
 ## The Problem
 
-When you use [Compound Components Pattern](https://kentcdodds.com/blog/compound-components-with-react-hooks) you need to guarantee that the children you receive are the same as you expect and in the major of cases these children should follow some order, for example:
+When you use [Compound Components Pattern](https://kentcdodds.com/blog/compound-components-with-react-hooks) you need to guarantee that the children you receive are the same as you expect and in most cases these children should follow some order, for example:
 
 ```jsx
 import { Modal, ModalHeader, ModalBody } from "some-react-modal-lib";
