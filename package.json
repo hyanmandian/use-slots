@@ -1,0 +1,44 @@
+{
+  "name": "@hyanmandian/use-slots",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "./src/index.ts",
+  "exports": "./dist/useSlots.modern.js",
+  "main": "./dist/useSlots.cjs",
+  "module": "./dist/useSlots.module.js",
+  "unpkg": "./dist/useSlots.umd.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "test": "jest"
+  },
+  "keywords": [
+    "react-hooks",
+    "hooks",
+    "react",
+    "utils",
+    "slot",
+    "slots"
+  ],
+  "author": "Hyan Mandian",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "@testing-library/react-hooks": "^7.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.11",
+    "jest": "^27.0.4",
+    "microbundle": "^0.13.3",
+    "react": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "react-keyed-flatten-children": "^1.3.0"
+  }
+}
