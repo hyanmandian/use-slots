@@ -11,12 +11,12 @@ When you use [Compound Components Pattern](https://kentcdodds.com/blog/compound-
 import { Modal, ModalHeader, ModalBody } from "some-react-modal-lib";
 
 export function Prompt() {
-    return (
-        <Modal>
-            <ModalHeader>Content Header</ModalHeader>
-            <ModalBody>Content Body<ModalBody>
-        </Modal>
-    )
+  return (
+    <Modal>
+      <ModalHeader>Content Header</ModalHeader>
+      <ModalBody>Content Body<ModalBody>
+    </Modal>
+  )
 }
 ```
 

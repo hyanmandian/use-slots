@@ -26,10 +26,10 @@ const SlottedAction = beSlot(Action, "action");
 describe("useSlots", () => {
   it("should return slots", () => {
     const children = [
-      <SlottedTitle>Título</SlottedTitle>,
-      <SlottedSubtitle>Sub título</SlottedSubtitle>,
-      <SlottedAction>Voltar</SlottedAction>,
-      <SlottedAction>Avançar</SlottedAction>,
+      <SlottedTitle>Title</SlottedTitle>,
+      <SlottedSubtitle>Subtitle</SlottedSubtitle>,
+      <SlottedAction>Back</SlottedAction>,
+      <SlottedAction>Continue</SlottedAction>,
     ];
 
     const {

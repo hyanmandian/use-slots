@@ -1,6 +1,4 @@
-import { useMemo } from "react";
 import flattenChildren from "react-keyed-flatten-children";
-
 import type { ReactNode } from "react";
 
 type Slot = { slot: string } & ReactNode;
