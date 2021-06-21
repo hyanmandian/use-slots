@@ -42,5 +42,10 @@
   },
   "dependencies": {
     "react-keyed-flatten-children": "^1.3.0"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    }
   }
 }
