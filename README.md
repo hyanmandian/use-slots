@@ -1,6 +1,6 @@
 <div align="center">
-<h1>use-slots 🧩</h1>
-<p>Slot placement for React</p>
+  <h1>use-slots 🧩</h1>
+  <p>Slot placement for React</p>
 </div>
 
 ## The Problem
@@ -55,6 +55,25 @@ function Modal({ children }) {
   return (
     <dialog>
       {slots.modalHeader}
+      {slots.modalBody}
+    </dialog>
+  );
+}
+```
+
+You can also combine `use-slots` with (tiny-invariant)[] to provide descriptive errors in development. In this example we suppose that `ModalHeader` as optional and `ModalBody` is required.
+
+```jsx
+import invariant from "tiny-invariant";
+
+function Modal({ children }) {
+  const slots = useSlots(children);
+
+  invariant(!slots.modalBody, "You should pass ModalBody as a children.");
+
+  return (
+    <dialog>
+      {slots.modalHeader ? slots.modalHeader : null}
       {slots.modalBody}
     </dialog>
   );
