@@ -10,8 +10,9 @@
   "unpkg": "./dist/useSlots.umd.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "test": "jest",
     "build": "microbundle",
-    "test": "jest"
+    "release": "release-it"
   },
   "keywords": [
     "react-hooks",
@@ -35,6 +36,7 @@
     "microbundle": "^0.13.3",
     "react": "^17.0.2",
     "react-test-renderer": "^17.0.2",
+    "release-it": "^14.10.0",
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.4"
   },
