@@ -1,13 +1,11 @@
 <div align="center">
-# use-slots
-
-> Slot placement for React.
-
+<h1>use-slots 🧩</h1>
+<p>Slot placement for React</p>
 </div>
 
 ## The Problem
 
-When you use [Compound Components Pattern]() you need to guarantee that the children you receive are the same as you expect and these children should follow some order, for example:
+When you use [Compound Components Pattern](https://kentcdodds.com/blog/compound-components-with-react-hooks) you need to guarantee that the children you receive are the same as you expect and these children should follow some order, for example:
 
 ```typescript
 import { Modal, ModalHeader, ModalBody } from "some-react-modal-lib";
@@ -22,7 +20,7 @@ export function Prompt() {
 }
 ```
 
-In this case, if you put `ModalHeader`, after `ModalBody` the render result should be wrong, because you depends on order.
+In this case, if you put `ModalHeader`, after `ModalBody` the render result should be wrong because it depends on the order.
 
 ## Installation
 
@@ -33,6 +31,7 @@ npm install --save use-slots
 ## Usage
 
 ```typescript
+// import these functions
 import { beSlot, useSlots } from "use-slots";
 
 // create your component as usual
