@@ -1,5 +1,5 @@
 {
-  "name": "@hyanmandian/use-slots",
+  "name": "use-slots",
   "version": "1.0.0",
   "description": "Slot placement for React",
   "type": "module",
