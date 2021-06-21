@@ -82,4 +82,4 @@ function Modal({ children }) {
 
 ## License
 
-(MIT)[./LICENSE]
+[MIT](./LICENSE)
