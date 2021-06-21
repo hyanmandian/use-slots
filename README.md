@@ -61,7 +61,7 @@ function Modal({ children }) {
 }
 ```
 
-You can also combine `use-slots` with [tiny-invariant](https://github.com/alexreardon/tiny-invariant) to provide descriptive errors in development. In this example we suppose that `ModalHeader` as optional and `ModalBody` is required.
+You can also combine `use-slots` with [tiny-invariant](https://github.com/alexreardon/tiny-invariant) to provide descriptive errors in development. In this example we presume that `ModalHeader` is optional and `ModalBody` is required.
 
 ```jsx
 import invariant from "tiny-invariant";
