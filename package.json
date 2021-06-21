@@ -1,7 +1,7 @@
 {
   "name": "@hyanmandian/use-slots",
   "version": "1.0.0",
-  "description": "",
+  "description": "Slot placement for React",
   "type": "module",
   "source": "./src/index.ts",
   "exports": "./dist/useSlots.modern.js",
