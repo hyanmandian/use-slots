@@ -4,14 +4,13 @@
   "description": "Slot placement for React",
   "type": "module",
   "source": "./src/index.ts",
-  "exports": "./dist/useSlots.modern.js",
   "main": "./dist/useSlots.cjs",
   "module": "./dist/useSlots.module.js",
   "unpkg": "./dist/useSlots.umd.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "microbundle",
+    "build": "microbundle --format esm,cjs,umd",
     "release": "release-it"
   },
   "files": [
