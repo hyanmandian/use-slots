@@ -1,6 +1,6 @@
 {
   "name": "use-slots",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Slot placement for React",
   "main": "dist/index.js",
   "module": "dist/use-slots.esm.js",
