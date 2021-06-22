@@ -1,5 +1,5 @@
-import flattenChildren from "react-keyed-flatten-children";
-import type { ReactNode } from "react";
+import { ReactNode } from 'react';
+import flattenChildren from 'react-keyed-flatten-children';
 
 type Slot = { slot: string } & ReactNode;
 
