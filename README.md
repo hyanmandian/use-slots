@@ -5,7 +5,7 @@
 
 ## The Problem
 
-When you use [Compound Components Pattern](https://kentcdodds.com/blog/compound-components-with-react-hooks) you need to guarantee that the children you receive are the same as you expect and in most cases these children should follow some order, for example:
+When you use [Compound Components Pattern](https://kentcdodds.com/blog/compound-components-with-react-hooks) you need to guarantee that the children you receive are the same as you expect. In most cases these children should also follow some order, for example:
 
 ```jsx
 import { Modal, ModalHeader, ModalBody } from "some-react-modal-lib";
@@ -20,7 +20,7 @@ export function Prompt() {
 }
 ```
 
-In this case, if you put `ModalHeader`, after `ModalBody` the render result could be wrong because it depends on the order.
+In this case, if you put `ModalHeader` after `ModalBody` the render result would be wrong, since it depends on the order of the components.
 
 ## Installation
 
@@ -69,7 +69,7 @@ import invariant from "tiny-invariant";
 function Modal({ children }) {
   const slots = useSlots(children);
 
-  invariant(!slots.modalBody, "You should pass ModalBody as a children.");
+  invariant(!slots.modalBody, "You should pass ModalBody as a child.");
 
   return (
     <dialog>
